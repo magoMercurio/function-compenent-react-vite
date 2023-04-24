@@ -1,15 +1,15 @@
-import ClassComponent from './components/ClassComponent'
+
 import './App.css'
-import FunComponent from './components/FuncComponent'
+import FormsignUp from './components/FormSignUp'
+
 
 function App() {
 
   return (
-
-    <div>
-      <ClassComponent />
-      <FunComponent />
-    </div>
+    <>
+    <h1>Formulario de Registro</h1>
+      <FormsignUp />
+    </>
   )
 }
 
