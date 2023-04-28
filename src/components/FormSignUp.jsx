@@ -1,5 +1,8 @@
-import Button from '@mui/material/Button';
-import TextField from '@mui/material/TextField';
+import Button from '@mui/material/Button'
+import TextField from '@mui/material/TextField'
+import { Switch } from '@mui/material'
+import { FormGroup } from '@mui/material'
+import { FormControlLabel } from '@mui/material'
 
 function FormsignUp() {
   return <form>
@@ -24,9 +27,18 @@ function FormsignUp() {
       fullWidth
       margin='normal'
     />
-    <input type="checkbox" name="" id="" />
-    <label>Novedades</label>
-    <input type="checkbox" name="" id="" />
+    <FormGroup>
+      <FormControlLabel 
+        control={ <Switch defaultChecked /> } 
+        label="Promociones" 
+      />
+    
+      <FormControlLabel 
+        control={ <Switch defaultChecked /> }
+        label="Novedades"
+      />
+    
+    </FormGroup>
     <Button variant='contained' >Resgistrarse</Button>
   </form>
 }
