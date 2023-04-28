@@ -5,7 +5,7 @@ import { Switch } from '@mui/material'
 import { FormGroup } from '@mui/material'
 import { FormControlLabel } from '@mui/material'
 
-function FormsignUp() {
+function FormsignUp({ handleSubmit }) {
   const [name, setName] = useState('')
   const [lastName, setLastName] = useState('')
   const [email, setEmail] = useState('')
@@ -14,7 +14,7 @@ function FormsignUp() {
   
   return <form onSubmit={ (e) => {
     e.preventDefault()
-    console.log({name, lastName, email, prom, nov})
+    handleSubmit({name, lastName, email, prom, nov})
   }} >
 
     <TextField
